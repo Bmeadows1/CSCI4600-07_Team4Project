@@ -1,4 +1,4 @@
-                                           ## Project Planet and Star Generator Requirements
+                                           ##Project Planet and Star Generator Requirements
                                            
 #Team Members
 
