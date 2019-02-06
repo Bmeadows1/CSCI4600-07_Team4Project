@@ -13,6 +13,10 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** 3d_models\
         **Type:** functional\
         **Summary:** Users will be able to see the planets and stars as 3D models
+        
+ 1.  **Name:** 3d_unfamiliarity\
+        **Type:** risk\
+        **Summary:** Developers are unfamiliar with 3D Models
        
  1.  **Name:** platform_os\
         **Type:** constraint\
@@ -29,11 +33,7 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** delete_system\
         **Type:** functional\
         **Summary:** User will have the ability to delete a generated system
-       
- 1.  **Name:** 3d_unfamiliarity\
-        **Type:** risk\
-        **Summary:** Developers are unfamiliar with 3D Models
-       
+
  1.  **Name:** user_load_error\
         **Type:** risk\
         **Summary:** Users could possibly load a file that could cause errors
@@ -106,18 +106,6 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** a surface will be generated for planets
         
-  1. **Name:** elemental_composition\
-        **Type:** functional\
-        **Summary:** Users will be given detailed information on the elemental composition of a star based on classification
-        
-   1. **Name:** star_color\
-        **Type:** functional\
-        **Summary:** Star color will be determined by temperature.
-        
-   1. **Name:** star_color_creation\
-        **Type:** constraint\
-        **Summary:** Developers are unfamiliar with how to implement color
-        
-   1. **Name:** earth_sun_comparison\
-        **Type:** function\
-        **Summary:** Program will display earth or sun to give a reference to planet or star
+ 1.  **Name:** user_creation_error\
+        **Type:** risk\
+        **Summary:** Users could possibly create a planet or star that could not exist
