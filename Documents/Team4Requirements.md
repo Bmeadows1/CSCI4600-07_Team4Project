@@ -1,14 +1,14 @@
-## Project Planet and Star Generator Requirements
+# Project Planet and Star Generator Requirements
                                            
-# Team Members
+## Team Members
 
 Benji Meadows and Zane Celmer
 
-# Purpose
+## Purpose
 
 This project will allow you to generate and simulate stars and planets
 
-# Requirements
+## Requirements
     
  1.  **Name:** 3d_models\
         **Type:** functional\
