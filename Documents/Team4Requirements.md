@@ -50,3 +50,58 @@ This project will allow you to generate and simulate stars and planets
         **Type:** risk
         **Summary:** Users could possibly load a file that does not exist
 
+    11. **Name:** planet_albedo
+        **Type:** functional
+        **Summary:** Users will be able to set albedo of a planet.
+        
+    12. **Name:** chemical_composition
+        **Type:** functional
+        **Summary:** Users will be able to set percentages for the composition of chemicals within atmosphere of a planet.
+        
+    13. **Name:** planet_size
+        **Type:** functional
+        **Summary:** Users will be able to set the size of a planet
+        
+    14. **Name:** planet_type
+        **Type:** functional
+        **Summary:** Users will be able to select the planet type from a list of various preset forms
+        
+    15. **Name:** planet_ring_composition
+        **Type:** functional
+        **Summary:** Users will be able to set the composition of a planet's rings
+        
+    16. **Name:** planet_ring_size
+        **Type:** functional
+        **Summary:** Users will be able to set the size of the planet's rings
+        
+    17. **Name:** planet_types
+        **Type:** constraint
+        **Summary:** May not be able to represent every type of possible planet due to number of possibilities
+        
+    18. **Name:** star_radius
+        **Type:** functional
+        **Summary:** Users will be able to set the Radius of a star with certain constraints
+        
+    19. **Name:** star_temperature
+        **Type:** functional
+        **Summary:** Users will be able to set the temperature of a star with certain constraints
+        
+    20. **Name:** star_size
+        **Type:** functional
+        **Summary:** Size will be calculated based off of both Stefan-Boltzmann law for Luminosity and HR-Diagram for relationship between Temperature and Luminosity.
+        
+    21. **Name:** star_classification
+        **Type:** functional
+        **Summary:** Users will be given star's classification based off of temperature and luminosity
+        
+    22. **Name:** star_types
+        **Type:** constraint
+        **Summary:** Many types of stars are challenging to implement (neutron stars, magnetars, black holes)
+        
+    23. **Name:** rotate_object
+        **Type:** functional
+        **Summary:** Users will be able to rotate object to look at different angles of a star or planet
+        
+    24. **Name:** surface_generator
+        **Type:** functoinal
+        **Summary:** a surface will be generated for planets
