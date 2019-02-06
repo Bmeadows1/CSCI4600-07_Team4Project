@@ -109,3 +109,24 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** user_creation_error\
         **Type:** risk\
         **Summary:** Users could possibly create a planet or star that could not exist
+        
+ 1. **Name:** elemental_composition\
+			**Type:** functional\
+			**Summary:** Users will be given detailed information on the elemental composition of a star based on the classification
+			
+
+ 1. **Name:** star_color\
+			**Type:** functional\
+			**Summary:** Star color will be determined by temperature.
+			
+
+ 1. **Name:** star_color_creation\
+			**Type:** constraint\
+			**Summary:** Developers are unfamiliar with how to implement color
+			
+
+	1. **Name:** earth_sun_comparison\
+			**Type:** function\
+			**Summary:** Program will display earth or sun to give a reference to planet or star
+
+
