@@ -17,6 +17,10 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** 3d_unfamiliarity\
         **Type:** risk\
         **Summary:** Developers are unfamiliar with 3D Models
+	
+1.  **Name:** star_system\
+        **Type:** risk\
+        **Summary:** User will be able to view planets and stars in a system
        
  1.  **Name:** platform_os\
         **Type:** constraint\
@@ -33,6 +37,10 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** delete_system\
         **Type:** functional\
         **Summary:** User will have the ability to delete a generated system
+	 
+ 1.  **Name:** user_exit\
+        **Type:** functional\
+        **Summary:** Users will be able to exit the program cleanly
 
  1.  **Name:** user_load_error\
         **Type:** risk\
@@ -41,14 +49,26 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** user_save_error\
         **Type:** risk\
         **Summary:** Users could possibly save a file that already exists
-       
- 1.  **Name:** user_exit\
-        **Type:** functional\
-        **Summary:** Users will be able to exit the program cleanly
-       
+	
  1. **Name:** user_load_does_not_exist_error\
         **Type:** risk\
         **Summary:** Users could possibly load a file that does not exist
+	
+ 1.  **Name:** user_exit\
+        **Type:** functional\
+        **Summary:** Users will be able to exit the program cleanly
+	
+ 1.  **Name:** user_create_planet\
+        **Type:** functional\
+        **Summary:** Users will be able to create a planet
+	
+1.  **Name:** user_create_star\
+        **Type:** functional\
+        **Summary:** Users will be able to create a star
+	
+1.  **Name:** user_creation_error\
+        **Type:** risk\
+        **Summary:** Users could possibly create a planet or star that could not exist or could cause errors in the program
 
  1. **Name:** planet_albedo\
         **Type:** functional\
@@ -65,6 +85,10 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** planet_type\
         **Type:** functional\
         **Summary:** Users will be able to select the planet type from a list of various preset forms
+	
+1.  **Name:** user_create_planet_ring\
+        **Type:** functional\
+        **Summary:** Users will be able to create a ring for a planet
         
  1. **Name:** planet_ring_composition\
         **Type:** functional\
@@ -105,10 +129,6 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** surface_generator\
         **Type:** functional\
         **Summary:** a surface will be generated for planets
-        
- 1.  **Name:** user_creation_error\
-        **Type:** risk\
-        **Summary:** Users could possibly create a planet or star that could not exist
         
  1. **Name:** elemental_composition\
 	**Type:** functional\
