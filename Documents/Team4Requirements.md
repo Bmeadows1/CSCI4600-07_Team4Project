@@ -72,7 +72,7 @@ This project will allow you to generate and simulate stars and planets
 
  1. **Name:** planet_albedo\
         **Type:** functional\
-        **Summary:** Users will be able to set albedo of a planet.
+        **Summary:** Users will be able to set the level of light absorbtion of a planet.
         
  1. **Name:** chemical_composition\
         **Type:** functional\
@@ -98,10 +98,6 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** Users will be able to set the size of the planet's rings
         
- 1. **Name:** planet_types\
-        **Type:** constraint\
-        **Summary:** May is not be able to represent every type of possible planet due to a number of possibilities
-        
  1. **Name:** star_radius\
         **Type:** functional\
         **Summary:** Users will be able to set the Radius of a star with certain constraints
@@ -112,14 +108,14 @@ This project will allow you to generate and simulate stars and planets
         
  1. **Name:** star_size\
         **Type:** functional\
-        **Summary:** Size will be calculated based off of both Stefan-Boltzmann law for Luminosity and HR-Diagram for the relationship between Temperature and Luminosity.
+        **Summary:** Size will be calculated and displayed to user
         
  1. **Name:** star_classification\
         **Type:** functional\
-        **Summary:** Users will be given star's classification based off of temperature and luminosity
+        **Summary:** Users will be given star's classification
         
  1. **Name:** star_types\
-        **Type:** constraint\
+        **Type:** risk\
         **Summary:** Many types of stars are challenging to implement (neutron stars, magnetars, black holes)
         
  1. **Name:** rotate_object\
@@ -132,15 +128,11 @@ This project will allow you to generate and simulate stars and planets
         
  1. **Name:** elemental_composition\
 	**Type:** functional\
-	**Summary:** Users will be given detailed information on the elemental composition of a star based on the classification
+	**Summary:** Users will be given detailed information on the elemental composition of a star
 	
  1. **Name:** star_color\
 	**Type:** functional\
 	**Summary:** Star color will be determined by temperature.
-	
- 1. **Name:** star_color_creation\
-	**Type:** constraint\
-	**Summary:** Developers are unfamiliar with how to implement color
 			
  1. **Name:** earth_sun_comparison\
 	**Type:** function\
