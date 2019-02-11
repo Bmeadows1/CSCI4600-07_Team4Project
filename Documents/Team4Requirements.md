@@ -19,7 +19,7 @@ This project will allow you to generate and simulate stars and planets
         **Summary:** Developers are unfamiliar with 3D Models
 	
 1.  **Name:** star_system\
-        **Type:** risk\
+        **Type:** functional\
         **Summary:** User will be able to view planets and stars in a system
        
  1.  **Name:** platform_os\
