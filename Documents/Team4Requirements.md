@@ -54,10 +54,6 @@ This project will allow you to generate and simulate stars and planets
         **Type:** risk\
         **Summary:** Users could possibly load a file that does not exist
 	
- 1.  **Name:** user_exit\
-        **Type:** functional\
-        **Summary:** Users will be able to exit the program cleanly
-	
  1.  **Name:** user_create_planet\
         **Type:** functional\
         **Summary:** Users will be able to create a planet
