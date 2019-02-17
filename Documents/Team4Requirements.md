@@ -18,9 +18,13 @@ This project will allow you to generate and simulate stars and planets
         **Type:** risk\
         **Summary:** Developers are unfamiliar with 3D Models
 	
-1.  **Name:** star_system\
+1.  **Name:** viewing_system\
         **Type:** functional\
-        **Summary:** User will be able to view planets and stars in a system
+        **Summary:** User will be able to view single planet or star in a system
+	
+	1.  **Name:** multi_viewing_system\
+        **Type:** functional\
+        **Summary:** Assuming single planet or star view goes quickly, include ability to view multiple star or planets at once
        
  1.  **Name:** platform_os\
         **Type:** constraint\
@@ -41,18 +45,10 @@ This project will allow you to generate and simulate stars and planets
  1.  **Name:** user_exit\
         **Type:** functional\
         **Summary:** Users will be able to exit the program cleanly
-
- 1.  **Name:** user_load_error\
-        **Type:** risk\
-        **Summary:** Users could possibly load a file that could cause errors
-       
- 1.  **Name:** user_save_error\
-        **Type:** risk\
-        **Summary:** Users could possibly save a file that already exists
 	
- 1. **Name:** user_load_does_not_exist_error\
-        **Type:** risk\
-        **Summary:** Users could possibly load a file that does not exist
+ 1.  **Name:** user_load_preset\
+        **Type:** functional\
+        **Summary:** Users will be able to load a preset planet or star
 	
  1.  **Name:** user_create_planet\
         **Type:** functional\
