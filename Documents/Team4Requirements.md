@@ -162,7 +162,7 @@ This project will allow you to generate and simulate stars and planets
 	**Type:** function\
 	**Summary:** Program will display earth or sun to give a reference to planet or star
 	
-*1. If 3D proves to challenging we may use a 2D alternative*
+*1. If 3D proves to challenging we may use a 2D alternative*\
 *2. If the project goes well then we might use a dynamic system instead*
 
 
