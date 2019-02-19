@@ -48,7 +48,7 @@ This project will allow you to generate and simulate stars and planets
 	
  1.  **Name:** user_load_preset\
         **Type:** functional\
-        **Summary:** Users will be able to load a preset planet or star
+        **Summary:** Users will be able to load a solar system planet or the sun as a base
 	
  1.  **Name:** user_create_planet\
         **Type:** functional\
@@ -61,14 +61,18 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** planet_albedo\
         **Type:** functional\
         **Summary:** Users will be able to set the level of light absorbtion of a planet.
+ 
+ 1. **Name:** planet_atmosphere_level\
+        **Type:** functional\
+        **Summary:** Users will be able to set the level of atmosphere a planet has.
         
- 1. **Name:** chemical_composition\
+ 1. **Name:** planet_chemical_composition\
         **Type:** functional\
         **Summary:** Users will be able to set percentages for the composition of chemicals within the atmosphere of a planet.
         
  1. **Name:** planet_size\
         **Type:** functional\
-        **Summary:** Users will be able to set the size of a planet
+        **Summary:** Users will be able to change the size of a planet with predefined constraints
 	
  1. **Name:** planet_type_gas\
         **Type:** functional\
@@ -78,25 +82,41 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** Users will be able to select the "Rock" planet type
 	
-1.  **Name:** user_create_planet_ring\
+ 1.  **Name:** user_create_planet_ring\
         **Type:** functional\
-        **Summary:** Users will be able to create a ring for a planet
+        **Summary:** Users will be able to create a ring for a planet 
         
  1. **Name:** planet_ring_composition\
         **Type:** functional\
-        **Summary:** Users will be able to set the composition of a planet's rings
+        **Summary:** Users will be able to set the composition of a planet's rings with predefined constraints
         
  1. **Name:** planet_ring_size\
         **Type:** functional\
-        **Summary:** Users will be able to set the size of the planet's rings
+        **Summary:** Users will be able to set the size of the planet's rings with predefined constraints
+	
+ 1. **Name:** planet_gravity\
+        **Type:** functional\
+        **Summary:** Program will display the planet's gravity
+	
+1. **Name:** star_type_base\
+       **Type:** functional\
+       **Summary:** User will have the option to select the "Base" star type.
+       
+ 1. **Name:** star_type_neutron\
+        **Type:** functional\
+        **Summary:** User will have the option to select the "Neutron Star" star type.
+
+ 1. **Name:** star_type_black_hole\
+        **Type:** risk\
+        **Summary:** User will have the option to select the "Black Hole" star type.
         
  1. **Name:** star_radius\
         **Type:** functional\
-        **Summary:** Users will be able to set the Radius of a star with certain constraints
+        **Summary:** Users will be able to set the Radius of a star with predefined constraints
         
  1. **Name:** star_temperature\
         **Type:** functional\
-        **Summary:** Users will be able to set the temperature of a star with certain constraints
+        **Summary:** Users will be able to set the temperature of a star with predefined constraints
         
  1. **Name:** star_size\
         **Type:** functional\
@@ -106,25 +126,13 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** Users will be given star's classification
 	
-1. **Name:** star_type_classic\
-       **Type:** functional\
-       **Summary:** User will have the option to select the "Classic" star type.
-       
- 1. **Name:** star_type_neutron\
-        **Type:** functional\
-        **Summary:** User will have the option to select the "Neutron Star" star type.
-        
- 1. **Name:** star_type_black_hole\
-        **Type:** risk\
-        **Summary:** User will have the option to select the "Black Hole" star type.
-	
  1. **Name:** rotate_object\
         **Type:** functional\
         **Summary:** Users will be able to rotate the object to look at different angles of a star or planet
         
  1. **Name:** surface_generator\
         **Type:** functional\
-        **Summary:** a surface will be generated for planets
+        **Summary:** a surface will be generated for rock type planets
         
  1. **Name:** elemental_composition\
 	**Type:** functional\
