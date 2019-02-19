@@ -36,7 +36,7 @@ This project will allow you to generate and simulate stars and planets
        
  1.  **Name:** load_system\
         **Type:** functional\
-        **Summary:** User will have the ability to load a generated system
+        **Summary:** User will have the option to load a generated system
        
  1.  **Name:** delete_system\
         **Type:** functional\
@@ -57,10 +57,6 @@ This project will allow you to generate and simulate stars and planets
 1.  **Name:** user_create_star\
         **Type:** functional\
         **Summary:** Users will be able to create a star
-	
-1.  **Name:** user_creation_error\
-        **Type:** risk\
-        **Summary:** Users could possibly create a planet or star that could not exist or could cause errors in the program
 
  1. **Name:** planet_albedo\
         **Type:** functional\
@@ -73,10 +69,14 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** planet_size\
         **Type:** functional\
         **Summary:** Users will be able to set the size of a planet
-        
- 1. **Name:** planet_type\
+	
+ 1. **Name:** planet_type_gas\
         **Type:** functional\
-        **Summary:** Users will be able to select the planet type from a list of various preset forms
+        **Summary:** User will be able to select the "Gas" planet type
+	
+ 1. **Name:** planet_type_rock\
+        **Type:** functional\
+        **Summary:** Users will be able to select the "Rock" planet type
 	
 1.  **Name:** user_create_planet_ring\
         **Type:** functional\
@@ -105,11 +105,19 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** star_classification\
         **Type:** functional\
         **Summary:** Users will be given star's classification
+	
+1. **Name:** star_type_classic\
+       **Type:** functional\
+       **Summary:** User will have the option to select the "Classic" star type.
+       
+ 1. **Name:** star_type_neutron\
+        **Type:** functional\
+        **Summary:** User will have the option to select the "Neutron Star" star type.
         
- 1. **Name:** star_types\
+ 1. **Name:** star_type_black_hole\
         **Type:** risk\
-        **Summary:** Many types of stars are challenging to implement (neutron stars, magnetars, black holes)
-        
+        **Summary:** User will have the option to select the "Black Hole" star type.
+	
  1. **Name:** rotate_object\
         **Type:** functional\
         **Summary:** Users will be able to rotate the object to look at different angles of a star or planet
