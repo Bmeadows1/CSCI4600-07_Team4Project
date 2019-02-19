@@ -16,11 +16,15 @@ This project will allow you to generate and simulate stars and planets
         
  1.  **Name:** 3d_unfamiliarity\
         **Type:** risk\
-        **Summary:** Developers are unfamiliar with 3D Models*
+        **Summary:** Developers are unfamiliar with 3D Models (1)
 	
  1.  **Name:** viewing_system\
         **Type:** functional\
         **Summary:** User will be able to view single planet or star in a viewing system
+	
+1.  **Name:** static_planet_and_star\
+        **Type:** functional\
+        **Summary:** The planets and stars will be static (2)
 
  1.  **Name:** viewing_system_edit\
         **Type:** functional\
@@ -158,6 +162,7 @@ This project will allow you to generate and simulate stars and planets
 	**Type:** function\
 	**Summary:** Program will display earth or sun to give a reference to planet or star
 	
-*If 3D proves to challenging we may use a 2D alternative
+*1. If 3D proves to challenging we may use a 2D alternative*
+*2. If the project goes well then we might use a dynamic system instead*
 
 
