@@ -112,7 +112,7 @@ This project will allow you to generate and simulate stars and planets
 	
  1. **Name:** planet_gravity\
         **Type:** functional\
-        **Summary:** Program will display the planet's gravity
+        **Summary:** Program will display the planet's gravity with respect to earth's gravity
 	
 1. **Name:** star_type_base\
        **Type:** functional\
