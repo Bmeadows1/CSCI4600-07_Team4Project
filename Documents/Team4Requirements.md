@@ -82,6 +82,22 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** Users will be able to select the "Rock" planet type
 	
+ 1. **Name:** planet_type_liquid\
+        **Type:** functional\
+        **Summary:** Allows the user to choose to have a rock planet to have water on the surface.
+	
+ 1. **Name:** planet_star_type\
+        **Type:** functional\
+        **Summary:** Lets the user choose the type of star the planet orbits around
+	
+ 1. **Name:** planet_distance_from_star\
+        **Type:** functional\
+        **Summary:** Allows the user to choose how far away the planet is from the star with certain constraints.
+	
+ 1. **Name:** surface_generator\
+        **Type:** functional\
+        **Summary:** a surface will be generated for rock type planets
+	
  1.  **Name:** user_create_planet_ring\
         **Type:** functional\
         **Summary:** Users will be able to create a ring for a planet 
@@ -129,10 +145,6 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** rotate_object\
         **Type:** functional\
         **Summary:** Users will be able to rotate the object to look at different angles of a star or planet
-        
- 1. **Name:** surface_generator\
-        **Type:** functional\
-        **Summary:** a surface will be generated for rock type planets
         
  1. **Name:** elemental_composition\
 	**Type:** functional\
