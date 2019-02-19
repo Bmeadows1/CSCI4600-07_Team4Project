@@ -134,9 +134,9 @@ This project will allow you to generate and simulate stars and planets
         **Type:** functional\
         **Summary:** Users will be able to set the temperature of a star with predefined constraints
         
- 1. **Name:** star_size\
+ 1. **Name:** star_luminosity\
         **Type:** functional\
-        **Summary:** Size will be calculated and displayed to user
+        **Summary:** Luminosity will be calculated and displayed to user
         
  1. **Name:** star_classification\
         **Type:** functional\
