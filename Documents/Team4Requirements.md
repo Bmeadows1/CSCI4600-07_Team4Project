@@ -57,22 +57,6 @@ This project will allow you to generate and simulate stars and planets
 1.  **Name:** user_create_star\
         **Type:** functional\
         **Summary:** Users will be able to create a star
-
- 1. **Name:** planet_albedo\
-        **Type:** functional\
-        **Summary:** Users will be able to set the level of light absorbtion of a planet.
- 
- 1. **Name:** planet_atmosphere_level\
-        **Type:** functional\
-        **Summary:** Users will be able to set the level of atmosphere a planet has.
-        
- 1. **Name:** planet_chemical_composition\
-        **Type:** functional\
-        **Summary:** Users will be able to set percentages for the composition of chemicals within the atmosphere of a planet.
-        
- 1. **Name:** planet_size\
-        **Type:** functional\
-        **Summary:** Users will be able to change the size of a planet with predefined constraints
 	
  1. **Name:** planet_type_gas\
         **Type:** functional\
@@ -85,6 +69,22 @@ This project will allow you to generate and simulate stars and planets
  1. **Name:** planet_type_liquid\
         **Type:** functional\
         **Summary:** Allows the user to choose to have a rock planet to have water on the surface.
+
+ 1. **Name:** planet_albedo\
+        **Type:** functional\
+        **Summary:** Users will be able to set the level of light absorbtion of a planet.
+ 
+ 1. **Name:** planet_atmosphere_level\
+        **Type:** functional\
+        **Summary:** Users will be able to set the level of atmosphere a planet has.
+        
+ 1. **Name:** planet_chemical_composition\
+        **Type:** functional\
+        **Summary:** Users will be able to set percentages for the composition of chemicals within the atmosphere of a rock or liquid planet.
+        
+ 1. **Name:** planet_size\
+        **Type:** functional\
+        **Summary:** Users will be able to change the size of a planet with predefined constraints
 	
  1. **Name:** planet_star_type\
         **Type:** functional\
