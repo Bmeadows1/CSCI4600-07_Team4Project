@@ -127,7 +127,7 @@ This project will allow you to generate and simulate stars and planets
         **Summary:** User will have the option to select the "Neutron Star" star type.
 
  1. **Name:** star_type_black_hole\
-        **Type:** risk\
+        **Type:** functional\
         **Summary:** User will have the option to select the "Black Hole" star type.
         
  1. **Name:** star_radius\
