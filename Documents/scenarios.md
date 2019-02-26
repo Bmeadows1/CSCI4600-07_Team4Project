@@ -1,11 +1,33 @@
 ## Scenario #1 ##
 
-Alex is an amateur astronomer is the rainy city of Boston. Due to the cloudiness and rain, he has trouble using his telescope for examining nearby planets and stars, such as Mars. To remedy this fact he has downloaded a planet and star simulator so that he might examine stars and planets without having to worry about cloud cover. Alex is interested in simply viewing planets and stars so he would like to have a large selection of preset planets to look at that and failing that he would like the ability to download preset planets and star for the program to access. Because Alex prefers to just look at planets he would want the ability to Hide the UI for editing planets.
+**User wishes to view planets**
+
+**Initial assumption:** A user wishes to view a planet or star due to some inability to see them without a compute aide. There are preset loadable planets and stars the user can view or could possible download new one off of the internet 
+
+**Normal:** The user chooses to load a preset planet and is prompted by a list of already saved planets which would include planets like Earth, Mars, and Venus. Upon loading the planet the user would be able to view the planet or star in the viewer and could examine details about the planet or star. The user would also have the ability to hide the details about the planet or star so that they could get a better view to the planet or star. When te user is finsihed looking at the planet or star they would be able to exit to program.
+
+**What can go wrong:** There could be a possible failure in loading a planet. In this case the user would be informed of the failure and would be prompted to load another planet or star.
 
 ## Scenario #2 ##
 
-Scenario Text
+**Initial assumption:** 
+
+**Normal:** 
+
+**What can go wrong:** 
+
+**Other activites:**
+
+**System state on completion:**
 
 ## Scenario #3 ##
 
-Scenario Text
+**Initial assumption:** 
+
+**Normal:** 
+
+**What can go wrong:** 
+
+**Other activites:**
+
+**System state on completion:**
