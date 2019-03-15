@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelestialSimulatorUI", "CSCI4600-07_Team4Project\CelestialSimulatorUI.csproj", "{2213AC57-BBE0-4C32-AE53-D0772D7C4A0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestial_Simulator_UI", "CSCI4600-07_Team4Project\Celestial_Simulator_UI.csproj", "{2213AC57-BBE0-4C32-AE53-D0772D7C4A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celestial_Simulator_Library", "CelestialSimulatorLibrary\Celestial_Simulator_Library.csproj", "{4E2C011E-5CFF-480C-B0F8-1BA7FD12477A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelestialSimulatorLibrary", "CelestialSimulatorLibrary\CelestialSimulatorLibrary.csproj", "{4E2C011E-5CFF-480C-B0F8-1BA7FD12477A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
