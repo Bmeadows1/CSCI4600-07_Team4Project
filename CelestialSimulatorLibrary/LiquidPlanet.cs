@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    public class Class1
+    class LiquidPlanet : Planet
     {
     }
 }
