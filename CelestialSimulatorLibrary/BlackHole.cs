@@ -8,5 +8,18 @@ namespace CelestialSimulatorLibrary
 {
     class BlackHole : Star
     {
+        private double accretionDiskLvl;
+
+        public double AccretionDiskLvl
+        {
+            get
+            {
+                return accretionDiskLvl;
+            }
+            set
+            {
+                accretionDiskLvl = value;
+            }
+        }
     }
 }

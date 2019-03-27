@@ -8,5 +8,21 @@ namespace CelestialSimulatorLibrary
 {
     class GasPlanet : Planet
     {
+        class RockPlanet : Planet
+        {
+            private List<string> gasType;
+
+            public List<string> GasType
+            {
+                get
+                {
+                    return gasType;
+                }
+                set
+                {
+                    gasType = value;
+                }
+            }
+        }
     }
 }

@@ -8,5 +8,18 @@ namespace CelestialSimulatorLibrary
 {
     class RockPlanet : Planet
     {
+        private List<string> surfaceType;
+
+        public List<string> SurfaceType
+        {
+            get
+            {
+                return surfaceType;
+            }
+            set
+            {
+                surfaceType = value;
+            }
+        }
     }
 }

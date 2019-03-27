@@ -8,5 +8,18 @@ namespace CelestialSimulatorLibrary
 {
     class Magnetar : NeutronStar
     {
+        private double magenticFieldInstensity;
+
+        public double MagenticFieldInstensity
+        {
+            get
+            {
+                return magenticFieldInstensity;
+            }
+            set
+            {
+                magenticFieldInstensity = value;
+            }
+        }
     }
 }
