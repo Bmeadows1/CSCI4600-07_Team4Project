@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    public class CelestialObject
+    public abstract class CelestialObject
     {
         private string name;
         private double radius;
         private double temperature;
         private double coreRadius;
 
-        CelestialObject()
-        {
-
+      CelestialObject()
+        { 
         }
 
         public string Name

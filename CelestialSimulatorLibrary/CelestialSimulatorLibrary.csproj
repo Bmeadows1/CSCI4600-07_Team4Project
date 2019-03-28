@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BlackHole.cs" />
     <Compile Include="CelestialObject.cs" />
+    <Compile Include="CelestialObjectBuilder.cs" />
     <Compile Include="GasPlanet.cs" />
     <Compile Include="LiquidPlanet.cs" />
     <Compile Include="Magnetar.cs" />
