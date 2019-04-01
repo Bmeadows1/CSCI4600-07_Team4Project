@@ -10,20 +10,13 @@ namespace CelestialSimulatorLibrary
     {
         class RockPlanet : Planet
         {
-            private List<string> liquidType;
+            private enum liquidType
+            {
+                // TODO Liquid Types
+            }
             private double liquidLevel;
 
-            public List<string> LiquidType
-            {
-                get
-                {
-                    return liquidType;
-                }
-                set
-                {
-                    liquidType = value;
-                }
-            }
+            
 
             public double LiquidLevel
             {

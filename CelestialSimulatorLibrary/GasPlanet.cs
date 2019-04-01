@@ -10,19 +10,11 @@ namespace CelestialSimulatorLibrary
     {
         class RockPlanet : Planet
         {
-            private List<string> gasType;
-
-            public List<string> GasType
+            private enum gasTypes
             {
-                get
-                {
-                    return gasType;
-                }
-                set
-                {
-                    gasType = value;
-                }
+                //TODO Gas types
             }
+            
         }
     }
 }

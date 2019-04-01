@@ -9,7 +9,10 @@ namespace CelestialSimulatorLibrary
     class Star : CelestialObject
     {
         private double luminosity;
-        private List<string> hRDiagramClass; // Might change string
+        private enum hRDiagramClass
+        {
+            //TODO HRDiagrams
+        }// Might change string
 
         public double Luminosity
         {

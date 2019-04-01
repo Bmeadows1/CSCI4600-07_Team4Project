@@ -13,8 +13,8 @@ namespace CelestialSimulatorLibrary
         private double temperature;
         private double coreRadius;
 
-      CelestialObject()
-        { 
+        public CelestialObject()
+        {
         }
 
         public string Name

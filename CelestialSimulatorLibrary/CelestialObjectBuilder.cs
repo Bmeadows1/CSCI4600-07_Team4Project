@@ -9,34 +9,44 @@ namespace CelestialSimulatorLibrary
    public abstract class CelestialObjectBuilder
     {
         CelestialObject c;
-        enum CelestialObjectTypes {Planet, RockPlanet, LiquidPlanet, GasPlanet, Star, NeutronStar, Magnetar, BlackHole };
-        CelestialObjectBuilder(int CelestialObjectType)
+        enum CelestialObjectTypes
+        {   Planet,
+            RockPlanet,
+            LiquidPlanet,
+            GasPlanet,
+            Star,
+            NeutronStar,
+            Magnetar,
+            BlackHole
+        };
+
+        CelestialObjectBuilder(CelestialObjectTypes CelestialObjectType)
         {
-            if (CelestialObjectType == (int)CelestialObjectTypes.RockPlanet)
+            if (CelestialObjectType == CelestialObjectTypes.RockPlanet)
             {
                 c = new RockPlanet();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.LiquidPlanet)
+            else if (CelestialObjectType == CelestialObjectTypes.LiquidPlanet)
             {
                 c = new LiquidPlanet();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.GasPlanet)
+            else if (CelestialObjectType == CelestialObjectTypes.GasPlanet)
             {
                 c = new GasPlanet();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.Star)
+            else if (CelestialObjectType == CelestialObjectTypes.Star)
             {
                 c = new Star();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.NeutronStar)
+            else if (CelestialObjectType == CelestialObjectTypes.NeutronStar)
             {
                 c = new NeutronStar();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.Magnetar)
+            else if (CelestialObjectType == CelestialObjectTypes.Magnetar)
             {
                 c = new Magnetar();
             }
-            else if (CelestialObjectType == (int)CelestialObjectTypes.BlackHole)
+            else if (CelestialObjectType == CelestialObjectTypes.BlackHole)
             {
                 c = new BlackHole();
             }

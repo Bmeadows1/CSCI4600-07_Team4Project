@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    class Planet : CelestialObject
+    abstract class Planet : CelestialObject
     {
         private double atmosphereDensity;
-        private List<string> atmosphereType;
+        private enum atmosphereTypes
+        {
+            //TODO atmospheres 
+        }
         private double albedo;
 
         public double AtmosphereDensity
@@ -21,18 +24,6 @@ namespace CelestialSimulatorLibrary
             set
             {
                 atmosphereDensity = value;
-            }
-        }
-
-        public List<string> AtmosphereType
-        {
-            get
-            {
-                return atmosphereType;
-            }
-            set
-            {
-                atmosphereType = value;
             }
         }
 
