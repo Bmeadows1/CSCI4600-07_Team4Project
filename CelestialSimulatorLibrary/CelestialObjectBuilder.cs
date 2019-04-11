@@ -9,7 +9,7 @@ namespace CelestialSimulatorLibrary
    public abstract class CelestialObjectBuilder
     {
         CelestialObject c;
-        enum CelestialObjectTypes
+        enum CelestialObjectType
         {   Planet,
             RockPlanet,
             LiquidPlanet,
@@ -20,33 +20,33 @@ namespace CelestialSimulatorLibrary
             BlackHole
         };
 
-        CelestialObjectBuilder(CelestialObjectTypes CelestialObjectType)
+        CelestialObjectBuilder(CelestialObjectType CelestialObjectType)
         {
-            if (CelestialObjectType == CelestialObjectTypes.RockPlanet)
+            if (CelestialObjectType == CelestialObjectType.RockPlanet)
             {
                 c = new RockPlanet();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.LiquidPlanet)
+            else if (CelestialObjectType == CelestialObjectType.LiquidPlanet)
             {
                 c = new LiquidPlanet();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.GasPlanet)
+            else if (CelestialObjectType == CelestialObjectType.GasPlanet)
             {
                 c = new GasPlanet();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.Star)
+            else if (CelestialObjectType == CelestialObjectType.Star)
             {
                 c = new Star();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.NeutronStar)
+            else if (CelestialObjectType == CelestialObjectType.NeutronStar)
             {
                 c = new NeutronStar();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.Magnetar)
+            else if (CelestialObjectType == CelestialObjectType.Magnetar)
             {
                 c = new Magnetar();
             }
-            else if (CelestialObjectType == CelestialObjectTypes.BlackHole)
+            else if (CelestialObjectType == CelestialObjectType.BlackHole)
             {
                 c = new BlackHole();
             }

@@ -15,6 +15,7 @@ namespace CelestialSimulatorLibrary
         }
         private double albedo;
 
+        //Will be a percentage based off of user input. The higher the percentage, the denser the atmosphere.
         public double AtmosphereDensity
         {
             get
@@ -26,7 +27,7 @@ namespace CelestialSimulatorLibrary
                 atmosphereDensity = value;
             }
         }
-
+        //Levels of light absorption of a planet.
         public double Albedo
         {
             get

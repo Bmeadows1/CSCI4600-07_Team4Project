@@ -28,6 +28,7 @@ namespace CelestialSimulatorLibrary
                 name = value;
             }
         }
+        //Distance from center of object to surface
         public double Radius
         {
             get
@@ -39,6 +40,7 @@ namespace CelestialSimulatorLibrary
                 radius = value;
             }
         }
+        //Level of heat of an object
         public double Temperature
         {
             get
@@ -50,6 +52,7 @@ namespace CelestialSimulatorLibrary
                 temperature = value;
             }
         }
+        //Radius of core of object
         public double CoreRadius
         {
             get
