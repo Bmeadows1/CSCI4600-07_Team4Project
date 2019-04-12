@@ -11,7 +11,6 @@ namespace CelestialSimulatorLibrary
         private string name;
         private double radius;
         private double temperature;
-        private double coreRadius;
 
         public CelestialObject()
         {
@@ -29,6 +28,7 @@ namespace CelestialSimulatorLibrary
             }
         }
         //Distance from center of object to surface
+        //Will be in terms of Solar Radii (1 = 1 radius of the sun)
         public double Radius
         {
             get
@@ -40,7 +40,7 @@ namespace CelestialSimulatorLibrary
                 radius = value;
             }
         }
-        //Level of heat of an object
+        //Level of heat of an object stored in Kelvin
         public double Temperature
         {
             get
@@ -52,17 +52,6 @@ namespace CelestialSimulatorLibrary
                 temperature = value;
             }
         }
-        //Radius of core of object
-        public double CoreRadius
-        {
-            get
-            {
-                return coreRadius;
-            }
-            set
-            {
-                coreRadius = value;
-            }
-        }
+
     }
 }
