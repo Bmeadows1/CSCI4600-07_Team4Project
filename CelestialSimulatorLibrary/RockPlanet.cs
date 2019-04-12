@@ -10,7 +10,9 @@ namespace CelestialSimulatorLibrary
     {
         private enum surfaceTypes
         {
-            // TODO surface types
+            Frozen,
+            Rock,
+            OxygenatedRock
         }
 
 

@@ -10,10 +10,7 @@ namespace CelestialSimulatorLibrary
     {
         class RockPlanet : Planet
         {
-            private enum liquidType
-            {
-                // TODO Liquid Types
-            }
+            
             private double liquidLevel;
 
             

@@ -8,13 +8,12 @@ namespace CelestialSimulatorLibrary
 {
     class GasPlanet : Planet
     {
-        class RockPlanet : Planet
-        {
             private enum gasTypes
             {
-                //TODO Gas types
+                Hydrogen,
+                Helium,
+                Nitrogen,
+                Oxygen
             }
-            
-        }
     }
 }
