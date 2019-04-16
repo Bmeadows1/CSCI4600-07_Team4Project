@@ -14,7 +14,13 @@ namespace CelestialSimulatorLibrary
             Rock,
             OxygenatedRock
         }
+        RockPlanet()
+        {
+            Radius = 1;
+            Temperature = 210;
+            Name = "Mars";
 
+        }
 
        
     }

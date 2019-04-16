@@ -11,9 +11,12 @@ namespace CelestialSimulatorLibrary
         private double atmosphereDensity;
         private enum atmosphereTypes
         {
-            //TODO atmospheres 
+            Nitrogen,
+            Helium,
+            Hydrogen
         }
         private double albedo;
+
 
         //Will be a percentage based off of user input. The higher the percentage, the denser the atmosphere.
         public double AtmosphereDensity
@@ -27,7 +30,7 @@ namespace CelestialSimulatorLibrary
                 atmosphereDensity = value;
             }
         }
-        //Levels of light absorption of a planet.
+        //Levels of light absorption of a planet. Affects Temperature
         public double Albedo
         {
             get

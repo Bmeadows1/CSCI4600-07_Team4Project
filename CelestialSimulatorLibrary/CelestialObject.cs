@@ -8,6 +8,7 @@ namespace CelestialSimulatorLibrary
 {
     public abstract class CelestialObject
     {
+        private string color;
         private string name;
         private double radius;
         private double temperature;
@@ -25,6 +26,17 @@ namespace CelestialSimulatorLibrary
             set
             {
                 name = value;
+            }
+        }
+        public string Color
+        {
+            get
+            {
+                return color;
+            }
+            set
+            {
+                color = value;
             }
         }
         //Distance from center of object to surface
