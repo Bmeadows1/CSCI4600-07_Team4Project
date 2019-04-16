@@ -14,7 +14,7 @@ namespace CelestialSimulatorLibrary
             Rock,
             OxygenatedRock
         }
-        RockPlanet()
+        public RockPlanet() 
         {
             Radius = 1;
             Temperature = 210;

@@ -16,14 +16,13 @@ namespace CelestialSimulatorLibrary
 
         
         //Base Constructor which sets up the sun.
-        Star()
+      public Star()
         {
             starType = "G2V";
             Temperature = Convert.ToDouble(GetTemp(starType));
-            Color = GetRGB(starType);
+            Color = GetRGB(starType).Replace(" ","");
             Name = "Sun";
             Radius = 1;
-
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
 
