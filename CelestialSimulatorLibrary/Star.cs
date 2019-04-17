@@ -7,29 +7,29 @@ using System.IO;
 
 namespace CelestialSimulatorLibrary
 {
-   class Star : CelestialObject
+    class Star : CelestialObject
     {
-        public const double STEFF_BOLTZ = 5.6703e-8;
+        private const double STEFF_BOLTZ = 5.6703e-8;
         private double luminosity;
-        string starType;
+        private string starType;
         // Star Classification based off of temperature going from hottest to coolest.
 
-        
+
         //Base Constructor which sets up the sun.
-      public Star()
+        public Star()
         {
             starType = "G2V";
             Temperature = Convert.ToDouble(GetTemp(starType));
-            Color = GetRGB(starType).Replace(" ","");
+            Color = GetRGB(starType).Replace(" ", "");
             Name = "Sun";
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
 
-        String GetTemp(String starType)
+        public string GetTemp(string starType)
         {
             var strLines = File.ReadLines("StarClassification.csv");
-            foreach(var line in strLines)
+            foreach (var line in strLines)
             {
                 if (line.Split(',')[1].Equals(starType))
                 {
@@ -39,7 +39,7 @@ namespace CelestialSimulatorLibrary
             return "";
         }
 
-        String GetRGB(String starType)
+        public string GetRGB(string starType)
         {
             var strLines = File.ReadLines("StarClassification.csv");
             foreach (var line in strLines)

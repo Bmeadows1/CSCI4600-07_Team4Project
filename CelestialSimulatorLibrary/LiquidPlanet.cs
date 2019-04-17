@@ -10,10 +10,10 @@ namespace CelestialSimulatorLibrary
     {
         class RockPlanet : Planet
         {
-            
+
             private double liquidLevel;
 
-            
+
 
             public double LiquidLevel
             {
