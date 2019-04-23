@@ -9,11 +9,11 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
 
-        <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="58,53,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="28,52,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
         <Ellipse Fill="#FFFFFF" x:Name="visualObject" HorizontalAlignment="Left" Height="100" Margin="209,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="TypeText" HorizontalAlignment="Left" Height="28" Margin="189,24,0,0" TextWrapping="Wrap" Text="Type: " VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="TemperatureText" HorizontalAlignment="Left" Height="28" Margin="346,24,0,0" TextWrapping="Wrap" Text="Temp: " VerticalAlignment="Top" Width="100"/>
-        <ComboBox x:Name="CelestialObjectSelector" HorizontalAlignment="Left" Height="20" Margin="37,106,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="CelestialObjectSelector" HorizontalAlignment="Left" Height="20" Margin="37,108,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged">
 
             <System:String>Star</System:String>
             <System:String>NeutronStar</System:String>
@@ -22,7 +22,7 @@
             <System:String>LiquidPlanet</System:String>
             <System:String>RockPlanet</System:String>
         </ComboBox>
-        <ComboBox x:Name="StarMainClassification" HorizontalAlignment="Left" Height="20" Margin="37,149,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" Visibility="Collapsed">
+        <ComboBox x:Name="StarMainClassification" HorizontalAlignment="Left" Height="20" Margin="37,154,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" Visibility="Collapsed">
 
             <System:String>O</System:String>
             <System:String>B</System:String>
@@ -31,6 +31,31 @@
             <System:String>G</System:String>
             <System:String>K</System:String>
             <System:String>M</System:String>
+        </ComboBox>
+        <ComboBox x:Name="StarSubClassification" HorizontalAlignment="Left" Height="20" Margin="37,187,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" Visibility="Collapsed">
+
+            <System:String>0</System:String>
+            <System:String>1</System:String>
+            <System:String>2</System:String>
+            <System:String>3</System:String>
+            <System:String>4</System:String>
+            <System:String>5</System:String>
+            <System:String>6</System:String>
+            <System:String>7</System:String>
+            <System:String>8</System:String>
+            <System:String>9</System:String>
+        </ComboBox>
+        
+        <ComboBox x:Name="StarSuperSubClassification" HorizontalAlignment="Left" Height="20" Margin="37,221,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" Visibility="Collapsed">
+
+            <System:String>Ia0</System:String>
+            <System:String>Ia</System:String>
+            <System:String>Ib</System:String>
+            <System:String>II</System:String>
+            <System:String>III</System:String>
+            <System:String>IV</System:String>
+            <System:String>V</System:String>
+            <System:String>VI</System:String>
         </ComboBox>
 
 

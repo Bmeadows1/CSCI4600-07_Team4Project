@@ -8,7 +8,7 @@ namespace CelestialSimulatorLibrary
 {
     public class CelestialObjectBuilder
     {
-        CelestialObject c;
+       public CelestialObject c;
         public enum CelestialObjectType
         {
             Planet,

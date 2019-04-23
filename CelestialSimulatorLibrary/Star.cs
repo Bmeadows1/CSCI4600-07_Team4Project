@@ -18,13 +18,21 @@ namespace CelestialSimulatorLibrary
         //Base Constructor which sets up the sun.
         public Star()
         {
-            starType = "O0Ia0";
+            starType = "G2V";
             Temperature = Convert.ToDouble(GetTemp(starType));
             Color = GetRGB(starType).Split('.').Select(Byte.Parse).ToList();
             Name = "Sun";
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
-            Console.WriteLine(Color);
+        }
+        public Star(String Classification)
+        {
+            starType = Classification;
+            Temperature = Convert.ToDouble(GetTemp(starType));
+            Color = GetRGB(starType).Split('.').Select(Byte.Parse).ToList();
+            Name = "Sun";
+            Radius = 1;
+            luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
 
         public string GetTemp(string starType)

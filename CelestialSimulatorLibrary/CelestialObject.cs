@@ -14,9 +14,6 @@ namespace CelestialSimulatorLibrary
         private double radius;
         private Double temperature;
 
-        public CelestialObject()
-        {
-        }
 
         public string Name
         {
