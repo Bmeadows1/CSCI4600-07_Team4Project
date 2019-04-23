@@ -27,6 +27,7 @@ namespace CSCI4600_07_Team4Project
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             SolidColorBrush G;
+            OurSun.Visibility = Visibility.Collapsed;
             LuminosityText.Visibility = Visibility.Collapsed;
             StarMainClassification.Visibility = Visibility.Collapsed;
             StarSubClassification.Visibility = Visibility.Collapsed;
@@ -48,6 +49,7 @@ namespace CSCI4600_07_Team4Project
 
            if(objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.Star)
             {
+                OurSun.Visibility = Visibility.Visible;
                 LuminosityText.Visibility = Visibility.Visible;
                 StarGenerator.Visibility = Visibility.Visible;
                 StarMainClassification.Visibility = Visibility.Visible;
@@ -56,14 +58,29 @@ namespace CSCI4600_07_Team4Project
             }
            if(objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.NeutronStar)
             {
+                TemperatureText.Text = "6000000";
+                OurSun.Visibility = Visibility.Visible;
                 G = new SolidColorBrush(Color.FromRgb(255, 255, 255));
                 visualObject.Fill = G;
                 RadiusValue.Maximum = 20;
             }
            if(objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.BlackHole)
             {
+                OurSun.Visibility = Visibility.Visible;
                 G = new SolidColorBrush(Color.FromRgb(0, 0, 0));
                 visualObject.Fill = G;
+            }
+            if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.GasPlanet)
+            {
+
+            }
+            if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.LiquidPlanet)
+            {
+
+            }
+            if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.RockPlanet)
+            {
+
             }
         }
 
