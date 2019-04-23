@@ -8,7 +8,7 @@ namespace CelestialSimulatorLibrary
 {
    public class BlackHole : Star
     {
-        BlackHole()
+        public BlackHole()
         {
            
         }
