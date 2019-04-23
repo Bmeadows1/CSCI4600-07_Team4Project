@@ -7,7 +7,7 @@ using System.IO;
 
 namespace CelestialSimulatorLibrary
 {
-    class Star : CelestialObject
+  public class Star : CelestialObject
     {
         private const double STEFF_BOLTZ = 5.6703e-8;
         private double luminosity;
@@ -18,12 +18,13 @@ namespace CelestialSimulatorLibrary
         //Base Constructor which sets up the sun.
         public Star()
         {
-            starType = "G2V";
+            starType = "O0Ia0";
             Temperature = Convert.ToDouble(GetTemp(starType));
-            Color = GetRGB(starType).Replace(" ", "");
+            Color = GetRGB(starType).Split('.').Select(Byte.Parse).ToList();
             Name = "Sun";
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
+            Console.WriteLine(Color);
         }
 
         public string GetTemp(string starType)
@@ -31,12 +32,12 @@ namespace CelestialSimulatorLibrary
             var strLines = File.ReadLines("StarClassification.csv");
             foreach (var line in strLines)
             {
-                if (line.Split(',')[1].Equals(starType))
+                if (line.Split(',')[0].Equals(starType))
                 {
-                    return line.Split(',')[2];
+                    return line.Split(',')[1];
                 }
             }
-            return "";
+            return "0";
         }
 
         public string GetRGB(string starType)
@@ -44,12 +45,12 @@ namespace CelestialSimulatorLibrary
             var strLines = File.ReadLines("StarClassification.csv");
             foreach (var line in strLines)
             {
-                if (line.Split(',')[1].Equals(starType))
+                if (line.Split(',')[0].Equals(starType))
                 {
-                    return line.Split(',')[3];
+                    return line.Split(',')[2];
                 }
             }
-            return "";
+            return "00.00.00";
         }
 
         // Luminosity is a calculation based off of Temperature and Radius. Determines an object's brightness.

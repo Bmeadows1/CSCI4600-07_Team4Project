@@ -17,7 +17,6 @@ namespace CelestialSimulatorLibrary
             GasPlanet,
             Star,
             NeutronStar,
-            Magnetar,
             BlackHole
         };
 
@@ -45,10 +44,6 @@ namespace CelestialSimulatorLibrary
             else if (CelestialObjectType == CelestialObjectType.NeutronStar)
             {
                 c = new NeutronStar();
-            }
-            else if (CelestialObjectType == CelestialObjectType.Magnetar)
-            {
-                c = new Magnetar();
             }
             else if (CelestialObjectType == CelestialObjectType.BlackHole)
             {

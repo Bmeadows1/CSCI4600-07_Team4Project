@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    class BlackHole : Star
+   public class BlackHole : Star
     {
+        BlackHole()
+        {
+           
+        }
         private double accretionDiskLvl;
 
         public double AccretionDiskLvl

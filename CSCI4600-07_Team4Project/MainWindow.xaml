@@ -9,7 +9,12 @@
     <Grid>
         
         <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="58,53,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
-        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="209,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Ellipse Fill="#FFF4F4" Name="visualObject" HorizontalAlignment="Left" Height="100" Margin="209,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Temp: " HorizontalAlignment="Left" Height="28" Margin="209,53,0,0" VerticalAlignment="Top" Width="82"/>
+        <TextBlock Name="TemperatureText" HorizontalAlignment="Left" Height="28" Margin="291,53,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <ComboBox Name="CelestialObjectSelector" HorizontalAlignment="Left" Height="20" Margin="37,106,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged">
+          
+        </ComboBox>
 
     </Grid>
 </Window>

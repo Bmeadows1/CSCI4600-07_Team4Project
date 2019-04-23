@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace CelestialSimulatorLibrary
 {
     public abstract class CelestialObject
     {
-        private string color;
+        private List<Byte> color;
         private string name;
         private double radius;
-        private double temperature;
+        private Double temperature;
 
         public CelestialObject()
         {
@@ -28,7 +29,7 @@ namespace CelestialSimulatorLibrary
                 name = value;
             }
         }
-        public string Color
+        public List<Byte> Color
         {
             get
             {

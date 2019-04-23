@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,7 +46,6 @@
     <Compile Include="CelestialObjectBuilder.cs" />
     <Compile Include="GasPlanet.cs" />
     <Compile Include="LiquidPlanet.cs" />
-    <Compile Include="Magnetar.cs" />
     <Compile Include="NeutronStar.cs" />
     <Compile Include="Planet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
