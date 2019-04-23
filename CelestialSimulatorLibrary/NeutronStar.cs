@@ -9,7 +9,11 @@ namespace CelestialSimulatorLibrary
     class NeutronStar : Star
     {
         private bool isSupernova;
-
+        public NeutronStar()
+        {
+            Color = "00.00.00".Split('.').Select(Byte.Parse).ToList();
+            Temperature = 600000;
+        }
         public bool IsSupernova
         {
             get

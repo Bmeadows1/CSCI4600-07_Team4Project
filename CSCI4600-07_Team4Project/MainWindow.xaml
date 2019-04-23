@@ -9,7 +9,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
 
-        <Button Content="Button" HorizontalAlignment="Left" Height="28" Margin="28,52,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Button Content="Star Generator" Name="StarGenerator" HorizontalAlignment="Left" Height="28" Margin="28,52,0,0" VerticalAlignment="Top" Visibility="Collapsed" Width="85" Click="StarGenerator_Click"/>
         <Ellipse Fill="#FFFFFF" x:Name="visualObject" HorizontalAlignment="Left" Height="100" Margin="209,130,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="TypeText" HorizontalAlignment="Left" Height="28" Margin="189,24,0,0" TextWrapping="Wrap" Text="Type: " VerticalAlignment="Top" Width="100"/>
         <TextBlock x:Name="TemperatureText" HorizontalAlignment="Left" Height="28" Margin="346,24,0,0" TextWrapping="Wrap" Text="Temp: " VerticalAlignment="Top" Width="100"/>
@@ -57,6 +57,8 @@
             <System:String>V</System:String>
             <System:String>VI</System:String>
         </ComboBox>
+        <Slider Name="RadiusValue" HorizontalAlignment="Left" Height="19" Margin="20,270,0,0" VerticalAlignment="Top" Width="108" Minimum ="1" Maximum="5000" ValueChanged="RadiusValue_ValueChanged"/>
+        <TextBlock x:Name="LuminosityText" HorizontalAlignment="Left" Height="28" Margin="37,10,0,0" TextWrapping="Wrap" Visibility="Collapsed" Text="Luminosity: " VerticalAlignment="Top" Width="100"/>
 
 
     </Grid>
