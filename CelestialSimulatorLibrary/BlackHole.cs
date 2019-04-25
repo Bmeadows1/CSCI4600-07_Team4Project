@@ -10,20 +10,9 @@ namespace CelestialSimulatorLibrary
     {
         public BlackHole()
         {
-           
+            Color = "0.0.0".Split('.').Select(Byte.Parse).ToList();
+            Temperature = 0;
         }
-        private double accretionDiskLvl;
 
-        public double AccretionDiskLvl
-        {
-            get
-            {
-                return accretionDiskLvl;
-            }
-            set
-            {
-                accretionDiskLvl = value;
-            }
-        }
     }
-}
+        }

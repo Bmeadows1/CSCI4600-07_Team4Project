@@ -4,15 +4,13 @@ using System.Windows.Media;
 
 namespace CSCI4600_07_Team4Project
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+        //Button which generates star
         private void StarGenerator_Click(object sender, RoutedEventArgs e)
         {
             String starType = Convert.ToString(StarMainClassification.SelectedItem) + Convert.ToString(StarSubClassification.SelectedItem) + Convert.ToString(StarSuperSubClassification.SelectedItem); 
@@ -21,18 +19,40 @@ namespace CSCI4600_07_Team4Project
             SolidColorBrush G = new SolidColorBrush(Color.FromRgb(s.Color[0], s.Color[1], s.Color[2]));
             visualObject.Fill = G;
             LuminosityText.Text = "Luminosity: " + Convert.ToString(s.Luminosity);
-
         }
 
+        private void NeutronStarGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            CelestialSimulatorLibrary.NeutronStar ns = new CelestialSimulatorLibrary.NeutronStar();
+            TemperatureText.Text = "Temp: " + Convert.ToString(ns.Temperature);
+           SolidColorBrush G = new SolidColorBrush(Color.FromRgb(ns.Color[0], ns.Color[1], ns.Color[2]));
+            visualObject.Fill = G;
+        }
+
+        private void BlackHoleGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            CelestialSimulatorLibrary.BlackHole bh = new CelestialSimulatorLibrary.BlackHole();
+            TemperatureText.Text = "Temp: " + Convert.ToString(bh.Temperature);
+            SolidColorBrush G = new SolidColorBrush(Color.FromRgb(bh.Color[0], bh.Color[1], bh.Color[2]));
+            visualObject.Fill = G;
+        }
+
+        private void PlanetGenerator_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        //Choosing type of celestial object
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            SolidColorBrush G;
             OurSun.Visibility = Visibility.Collapsed;
             LuminosityText.Visibility = Visibility.Collapsed;
             StarMainClassification.Visibility = Visibility.Collapsed;
             StarSubClassification.Visibility = Visibility.Collapsed;
             StarSuperSubClassification.Visibility = Visibility.Collapsed;
             StarGenerator.Visibility = Visibility.Collapsed;
+            Earth.Visibility = Visibility.Collapsed;
+            NeutronStarGenerator.Visibility = Visibility.Collapsed;
+            BlackHoleGenerator.Visibility = Visibility.Collapsed;
             RadiusValue.Maximum = 5000;
 
 
@@ -58,29 +78,29 @@ namespace CSCI4600_07_Team4Project
             }
            if(objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.NeutronStar)
             {
-                TemperatureText.Text = "6000000";
+                NeutronStarGenerator.Visibility = Visibility.Visible;
                 OurSun.Visibility = Visibility.Visible;
-                G = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                visualObject.Fill = G;
-                RadiusValue.Maximum = 20;
+                RadiusValue.Maximum = 200;
             }
            if(objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.BlackHole)
             {
                 OurSun.Visibility = Visibility.Visible;
-                G = new SolidColorBrush(Color.FromRgb(0, 0, 0));
-                visualObject.Fill = G;
+                BlackHoleGenerator.Visibility = Visibility.Visible;
             }
             if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.GasPlanet)
             {
-
+                Earth.Visibility = Visibility.Visible;
+                RadiusValue.Maximum = 450;
             }
             if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.LiquidPlanet)
             {
-
+                Earth.Visibility = Visibility.Visible;
+                RadiusValue.Maximum = 450;
             }
             if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.RockPlanet)
             {
-
+                Earth.Visibility = Visibility.Visible;
+                RadiusValue.Maximum = 450;
             }
         }
 
