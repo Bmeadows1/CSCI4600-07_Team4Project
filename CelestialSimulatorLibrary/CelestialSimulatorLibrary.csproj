@@ -47,7 +47,6 @@
     <Compile Include="GasPlanet.cs" />
     <Compile Include="LiquidPlanet.cs" />
     <Compile Include="NeutronStar.cs" />
-    <Compile Include="Planet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RockPlanet.cs" />
     <Compile Include="SaveFileManagement.cs" />

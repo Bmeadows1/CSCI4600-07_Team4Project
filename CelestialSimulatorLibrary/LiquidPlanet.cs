@@ -6,27 +6,11 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    class LiquidPlanet : Planet
+   public class LiquidPlanet : CelestialObject
     {
-        class RockPlanet : Planet
+        public LiquidPlanet()
         {
-
-            private double liquidLevel;
-
-
-
-            public double LiquidLevel
-            {
-                get
-                {
-                    return liquidLevel;
-                }
-                set
-                {
-                    liquidLevel = value;
-                }
-            }
+            
         }
-
+        }
     }
-}

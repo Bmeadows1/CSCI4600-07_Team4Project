@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    class RockPlanet : Planet
+    class RockPlanet : CelestialObject
     {
         private enum surfaceTypes
         {
@@ -19,7 +19,6 @@ namespace CelestialSimulatorLibrary
             Radius = 1;
             Temperature = 210;
             Name = "Mars";
-
         }
     }
 }
