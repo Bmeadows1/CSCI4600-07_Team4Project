@@ -13,7 +13,7 @@ namespace CSCI4600_07_Team4Project
         //Button which generates star
         private void StarGenerator_Click(object sender, RoutedEventArgs e)
         {
-            String starType = Convert.ToString(StarMainClassification.SelectedItem) + 
+            string starType = Convert.ToString(StarMainClassification.SelectedItem) + 
                 Convert.ToString(StarSubClassification.SelectedItem) + 
                 Convert.ToString(StarSuperSubClassification.SelectedItem); 
 

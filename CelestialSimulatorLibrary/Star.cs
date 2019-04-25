@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace CelestialSimulatorLibrary
 {
-  public class Star : CelestialObject
+    public class Star : CelestialObject
     {
         private const double STEFF_BOLTZ = 5.6703e-8;
         private double luminosity;
@@ -20,18 +17,18 @@ namespace CelestialSimulatorLibrary
         {
             starType = "G2V";
             Temperature = Convert.ToDouble(GetTemp(starType));
-            Color = GetRGB(starType).Split('.').Select(Byte.Parse).ToList();
+            Color = GetRGB(starType).Split('.').Select(byte.Parse).ToList();
             Name = "Sun";
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
         //Constructor that creates star based on classification using functions which access RGB values 
         //and Temperature from StarClassification.csv
-        public Star(String Classification)
+        public Star(string classification)
         {
-            starType = Classification;
+            starType = classification;
             Temperature = Convert.ToDouble(GetTemp(starType));
-            Color = GetRGB(starType).Split('.').Select(Byte.Parse).ToList();
+            Color = GetRGB(starType).Split('.').Select(byte.Parse).ToList();
             Name = "Sun";
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;

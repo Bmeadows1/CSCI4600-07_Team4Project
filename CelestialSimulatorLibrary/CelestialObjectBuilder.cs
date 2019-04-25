@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CelestialSimulatorLibrary
+﻿namespace CelestialSimulatorLibrary
 {
     public class CelestialObjectBuilder
     {
-       public CelestialObject c;
+        public CelestialObject c;
         public enum CelestialObjectType
         {
             Planet,

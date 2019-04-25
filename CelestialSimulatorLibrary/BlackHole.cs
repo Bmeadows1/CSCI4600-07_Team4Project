@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace CelestialSimulatorLibrary
 {
-   public class BlackHole : Star
+    public class BlackHole : Star
     {
         public BlackHole()
         {
-            Color = "0.0.0".Split('.').Select(Byte.Parse).ToList();
+            Color = "0.0.0".Split('.').Select(byte.Parse).ToList();
             Temperature = 0;
         }
 
     }
-        }
+}

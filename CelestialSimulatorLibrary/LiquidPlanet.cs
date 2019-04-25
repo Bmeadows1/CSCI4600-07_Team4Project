@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace CelestialSimulatorLibrary
 {
-   public class LiquidPlanet : CelestialObject
+    public class LiquidPlanet : CelestialObject
     {
         public LiquidPlanet()
         {
-            Color = "0.119.190".Split('.').Select(Byte.Parse).ToList();
-        }
+            Color = "0.119.190".Split('.').Select(byte.Parse).ToList();
         }
     }
+}

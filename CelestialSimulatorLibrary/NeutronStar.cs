@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace CelestialSimulatorLibrary
 {
-   public class NeutronStar : Star
+    public class NeutronStar : Star
     {
         public NeutronStar()
         {
-            Color = "255.255.255".Split('.').Select(Byte.Parse).ToList();
+            Color = "255.255.255".Split('.').Select(byte.Parse).ToList();
             Temperature = 600000;
         }
-        }
     }
+}
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace CelestialSimulatorLibrary
 {
@@ -20,22 +16,22 @@ namespace CelestialSimulatorLibrary
             Radius = 1;
             Temperature = 210;
             Name = "Mars";
-            Color = "193.68.14".Split('.').Select(Byte.Parse).ToList();
+            Color = "193.68.14".Split('.').Select(byte.Parse).ToList();
         }
         //Sets up rock planet with surfaceType chosen
         public RockPlanet(surfaceType surfacetype)
         {
             if(surfacetype == surfaceType.Frozen)
             {
-                Color = "240.231.231".Split('.').Select(Byte.Parse).ToList();
+                Color = "240.231.231".Split('.').Select(byte.Parse).ToList();
             }
             else if (surfacetype == surfaceType.Rock)
             {
-                Color = "69.24.4".Split('.').Select(Byte.Parse).ToList();
+                Color = "69.24.4".Split('.').Select(byte.Parse).ToList();
             }
             else if (surfacetype == surfaceType.OxygenatedRock)
             {
-                Color = "193.68.14".Split('.').Select(Byte.Parse).ToList();
+                Color = "193.68.14".Split('.').Select(byte.Parse).ToList();
             }
         }
     }

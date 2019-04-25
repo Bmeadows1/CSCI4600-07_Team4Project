@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using System.Collections.Generic;
 
 namespace CelestialSimulatorLibrary
 {
     public abstract class CelestialObject
     {
-        private List<Byte> color;
         private string name;
         private double radius;
-        private Double temperature;
+        private double temperature;
+        private List<byte> color;
 
 
         public string Name
@@ -24,18 +19,6 @@ namespace CelestialSimulatorLibrary
             set
             {
                 name = value;
-            }
-        }
-        //List of bytes used for RGB.
-        public List<Byte> Color
-        {
-            get
-            {
-                return color;
-            }
-            set
-            {
-                color = value;
             }
         }
         //Distance from center of object to surface
@@ -61,6 +44,18 @@ namespace CelestialSimulatorLibrary
             set
             {
                 temperature = value;
+            }
+        }
+        //List of bytes used for RGB.
+        public List<byte> Color
+        {
+            get
+            {
+                return color;
+            }
+            set
+            {
+                color = value;
             }
         }
 
