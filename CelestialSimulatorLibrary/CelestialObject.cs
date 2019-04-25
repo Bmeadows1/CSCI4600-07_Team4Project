@@ -26,6 +26,7 @@ namespace CelestialSimulatorLibrary
                 name = value;
             }
         }
+        //List of bytes used for RGB.
         public List<Byte> Color
         {
             get

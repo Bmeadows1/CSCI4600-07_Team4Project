@@ -20,9 +20,6 @@ namespace CelestialSimulatorLibrary
             BlackHole
         };
 
-        //How can we pass different values in based off which type it is going to be? May need to rethink how this is set up.
-        //Possibly have a generic type for each set up here, and when we have the type set, have a specific constructor for each CelestialObjectType
-
         public CelestialObjectBuilder(CelestialObjectType CelestialObjectType)
         {
             if (CelestialObjectType == CelestialObjectType.RockPlanet)

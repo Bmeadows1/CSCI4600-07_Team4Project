@@ -25,6 +25,8 @@ namespace CelestialSimulatorLibrary
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
+        //Constructor that creates star based on classification using functions which access RGB values 
+        //and Temperature from StarClassification.csv
         public Star(String Classification)
         {
             starType = Classification;
@@ -34,7 +36,7 @@ namespace CelestialSimulatorLibrary
             Radius = 1;
             luminosity = Temperature * Temperature * Temperature * Temperature * Radius * Radius * STEFF_BOLTZ;
         }
-
+        //Gets temperature from StarClassification.csv using an input startype. Returns 0 if not found.
         public string GetTemp(string starType)
         {
             var strLines = File.ReadLines("StarClassification.csv");
@@ -47,7 +49,7 @@ namespace CelestialSimulatorLibrary
             }
             return "0";
         }
-
+        //Gets RGB values from StarClassification.csv. Returns 00.00.00 if not found.
         public string GetRGB(string starType)
         {
             var strLines = File.ReadLines("StarClassification.csv");

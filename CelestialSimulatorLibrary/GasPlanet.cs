@@ -15,10 +15,12 @@ namespace CelestialSimulatorLibrary
                 Nitrogen,
                 Oxygen
             }
+        //Sets up generic Gas planet when nothing is passed in.
         public GasPlanet()
         {
             Color = "216.217.200".Split('.').Select(Byte.Parse).ToList();
         }
+        //Sets up Gas planet with gasType selected
         public GasPlanet(gasType gastype)
         {
             if(gastype == gasType.Helium)

@@ -14,6 +14,7 @@ namespace CelestialSimulatorLibrary
             Rock,
             OxygenatedRock
         }
+        //Sets up generic rock planet.
         public RockPlanet()
         {
             Radius = 1;
@@ -21,6 +22,7 @@ namespace CelestialSimulatorLibrary
             Name = "Mars";
             Color = "193.68.14".Split('.').Select(Byte.Parse).ToList();
         }
+        //Sets up rock planet with surfaceType chosen
         public RockPlanet(surfaceType surfacetype)
         {
             if(surfacetype == surfaceType.Frozen)
