@@ -10,7 +10,7 @@ namespace CelestialSimulatorLibrary
     {
         public LiquidPlanet()
         {
-            
+            Color = "0.119.190".Split('.').Select(Byte.Parse).ToList();
         }
         }
     }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CelestialSimulatorLibrary
 {
-    class RockPlanet : CelestialObject
+    public class RockPlanet : CelestialObject
     {
-        private enum surfaceTypes
+        public enum surfaceType
         {
             Frozen,
             Rock,
@@ -19,6 +19,22 @@ namespace CelestialSimulatorLibrary
             Radius = 1;
             Temperature = 210;
             Name = "Mars";
+            Color = "193.68.14".Split('.').Select(Byte.Parse).ToList();
+        }
+        public RockPlanet(surfaceType surfacetype)
+        {
+            if(surfacetype == surfaceType.Frozen)
+            {
+                Color = "240.231.231".Split('.').Select(Byte.Parse).ToList();
+            }
+            else if (surfacetype == surfaceType.Rock)
+            {
+                Color = "69.24.4".Split('.').Select(Byte.Parse).ToList();
+            }
+            else if (surfacetype == surfaceType.OxygenatedRock)
+            {
+                Color = "193.68.14".Split('.').Select(Byte.Parse).ToList();
+            }
         }
     }
 }

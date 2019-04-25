@@ -57,6 +57,24 @@ namespace CSCI4600_07_Team4Project
             SolidColorBrush G = new SolidColorBrush(Color.FromRgb(gp.Color[0], gp.Color[1], gp.Color[2]));
             visualObject.Fill = G;
         }
+        private void LiquidPlanetGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            CelestialSimulatorLibrary.LiquidPlanet lp = new CelestialSimulatorLibrary.LiquidPlanet();
+            SolidColorBrush G = new SolidColorBrush(Color.FromRgb(lp.Color[0], lp.Color[1], lp.Color[2]));
+            visualObject.Fill = G;
+        }
+
+        private void RockPlanetGenerator_Click(object sender, RoutedEventArgs e)
+        {
+            CelestialSimulatorLibrary.RockPlanet.surfaceType planetType =
+                           (CelestialSimulatorLibrary.RockPlanet.surfaceType)
+                           Enum.Parse(typeof(CelestialSimulatorLibrary.RockPlanet.surfaceType),
+                           Convert.ToString(RockType.SelectedItem), true);
+            CelestialSimulatorLibrary.RockPlanet rp = new CelestialSimulatorLibrary.RockPlanet(planetType);
+            SolidColorBrush G = new SolidColorBrush(Color.FromRgb(rp.Color[0], rp.Color[1], rp.Color[2]));
+            visualObject.Fill = G;
+
+        }
         //Choosing type of celestial object
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
@@ -71,6 +89,9 @@ namespace CSCI4600_07_Team4Project
             BlackHoleGenerator.Visibility = Visibility.Collapsed;
             GasType.Visibility = Visibility.Collapsed;
             GasPlanetGenerator.Visibility = Visibility.Collapsed;
+            LiquidPlanetGenerator.Visibility = Visibility.Collapsed;
+            RockPlanetGenerator.Visibility = Visibility.Collapsed;
+            RockType.Visibility = Visibility.Collapsed;
             RadiusValue.Maximum = 5000;
 
 
@@ -114,11 +135,14 @@ namespace CSCI4600_07_Team4Project
             }
             if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.LiquidPlanet)
             {
+                LiquidPlanetGenerator.Visibility = Visibility.Visible;
                 Earth.Visibility = Visibility.Visible;
                 RadiusValue.Maximum = 450;
             }
             if (objectType == CelestialSimulatorLibrary.CelestialObjectBuilder.CelestialObjectType.RockPlanet)
             {
+                RockType.Visibility = Visibility.Visible;
+                RockPlanetGenerator.Visibility = Visibility.Visible;
                 Earth.Visibility = Visibility.Visible;
                 RadiusValue.Maximum = 450;
             }
@@ -127,16 +151,6 @@ namespace CSCI4600_07_Team4Project
         private void RadiusValue_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             visualObject.Width = visualObject.Height = RadiusValue.Value;
-        }
-
-        private void LiquidPlanetGenerator_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RockPlanetGenerator_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

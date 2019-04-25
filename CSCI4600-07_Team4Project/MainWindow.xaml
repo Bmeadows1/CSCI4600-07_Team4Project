@@ -70,6 +70,12 @@
             <System:String>Nitrogen</System:String>
             <System:String>Oxygen</System:String>
         </ComboBox>
+        <ComboBox x:Name="RockType" HorizontalAlignment="Left" Height="20" Margin="37,154,0,0" VerticalAlignment="Top" Width="106" SelectionChanged="ComboBox_SelectionChanged" Visibility="Collapsed">
+
+            <System:String>Frozen</System:String>
+            <System:String>Rock</System:String>
+            <System:String>OxygenatedRock</System:String>
+        </ComboBox>
         <Slider Name="RadiusValue" HorizontalAlignment="Left" Height="19" Margin="20,270,0,0" Value="100" VerticalAlignment="Top" Width="108" Minimum ="1" Maximum="5000" ValueChanged="RadiusValue_ValueChanged"/>
         <TextBlock x:Name="LuminosityText" HorizontalAlignment="Left" Height="28" Margin="37,10,0,0" TextWrapping="Wrap" Visibility="Collapsed" Text="Luminosity: " VerticalAlignment="Top" Width="100"/>
         
